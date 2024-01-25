@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>UTS_2._0</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="images\1.jpeg" />
+    <None Remove="images\account.png" />
+    <None Remove="images\document.png" />
+    <None Remove="images\edit.png" />
+    <None Remove="images\minus.png" />
+    <None Remove="images\plus.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images\1.jpeg" />
+    <Resource Include="images\account.png" />
+    <Resource Include="images\document.png" />
+    <Resource Include="images\edit.png" />
+    <Resource Include="images\minus.png" />
+    <Resource Include="images\plus.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="styles\" />
+    <Folder Include="Tests\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.13" />
+  </ItemGroup>
+
+</Project>
